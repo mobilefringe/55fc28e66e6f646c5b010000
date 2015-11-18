@@ -34,14 +34,7 @@
         <div class="left_column">
             <section class="portfolio_strict" id="photo_container">
                 <div class="row isotope_portfolio_container">
-                    <script id="photo_template" type="x-tmpl-mustache/text">
-            
-                            <div class="portfolio_item"> 
-                                <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
-                                    <img alt="photo{{id}}" src="{{alt_url}}"/>
-                                </a>
-                             </div>
-                    </script>
+                    
                 
                 
                 
@@ -59,6 +52,14 @@
         </div>
     </div>
 </div>
+<script id="photo_template" type="x-tmpl-mustache/text">
+            
+                            <div class="portfolio_item"> 
+                                <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
+                                    <img alt="photo{{id}}" src="{{alt_url}}"/>
+                                </a>
+                             </div>
+                    </script>
  <script id="centre_info_template" type="x-tmpl-mustache/text">
                     <p class="directory_content">{{name}}</p>
                     <p class="directory_content">{{address1}}</p>
