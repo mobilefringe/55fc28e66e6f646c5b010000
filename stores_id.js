@@ -170,7 +170,7 @@ $(document).ready(function() {
                 
                 
                 if ((val.store_front_url).indexOf('missing.png') > -1){
-                    val.alt_store_front_url = "http://assets.kodekloud.io/sites/562e8c436e6f642deb010000/image/jpeg/1443809778000/default.jpg"
+                    val.alt_store_front_url = "http://assets.kodekloud.io/sites/5633ae1a6e6f6469ef010000/5f309c3d7e0e61be0e6cd1ca513aa84d/default.jpg"
                 } else {
                     val.alt_store_front_url = getImageURL(val.store_front_url); 
                 }
