@@ -184,28 +184,28 @@ $(document).ready(function() {
         } else if (type == "hours"){
             hours = getHoursForIds(collection.store_hours)
             $.each( hours , function( key, val ) {
-                // switch(val.day_of_week) {
-                //     case 0:
-                //         val.day = $.t('app.days.sunday');
-                //         break;
-                //     case 1:
-                //         val.day = $.t('app.days.monday');
-                //         break;
-                //     case 2:
-                //         val.day = $.t('app.days.tuesday');
-                //         break;
-                //     case 3:
-                //         val.day = $.t('app.days.wednesday');
-                //         break;
-                //     case 4:
-                //         val.day = $.t('app.days.thursday');
-                //         break;
-                //     case 5:
-                //         val.day = $.t('app.days.friday');
-                //         break;
-                //     case 6:
-                //         val.day = $.t('app.days.saturday');
-                //         break;
+                switch(val.day_of_week) {
+                    case 0:
+                        val.day = $.t('app.days.sunday');
+                        break;
+                    case 1:
+                        val.day = $.t('app.days.monday');
+                        break;
+                    case 2:
+                        val.day = $.t('app.days.tuesday');
+                        break;
+                    case 3:
+                        val.day = $.t('app.days.wednesday');
+                        break;
+                    case 4:
+                        val.day = $.t('app.days.thursday');
+                        break;
+                    case 5:
+                        val.day = $.t('app.days.friday');
+                        break;
+                    case 6:
+                        val.day = $.t('app.days.saturday');
+                        break;
                 }
                 if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
                     // var open_time = new Date (val.open_time)
@@ -216,7 +216,7 @@ $(document).ready(function() {
                     
                     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = val.day + ": " + open_time.format() + " - " + close_time.format();
+                    val.h = val.day + ": " + open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
                 } else {
                     val.h = val.day+": Closed"
                 }
