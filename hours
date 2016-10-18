@@ -207,15 +207,12 @@
                 if ( h != 12) {
                     h = h - 12;    
                 }
-                
                 i = "PM"
             } else {
                 i = "AM"
             }
             return h+":"+m+" "+i;
         }
-        
-        
         
         function addZero(i) {
             if (i < 10) {
