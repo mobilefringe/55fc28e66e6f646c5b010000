@@ -114,7 +114,7 @@
                     if (start.format("DMY") == end.format("DMY")){
                     	val.dates = start.format("MMM D");
                     }
-                    else{
+                    else {
                     	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
                     }
                     if (val.description.length > 110) {
