@@ -208,11 +208,11 @@ $(document).ready(function() {
                         break;
                 }
                 if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                    var open_time = new Date (val.open_time)
-                    var close_time = new Date (val.close_time)
-                    val.open_time = convert_hour(open_time);
-                    val.close_time = convert_hour(close_time);    
-                    val.h = val.day+": "+val.open_time+ " - " + val.close_time;
+                    // var open_time = new Date (val.open_time)
+                    // var close_time = new Date (val.close_time)
+                    // val.open_time = convert_hour(open_time);
+                    // val.close_time = convert_hour(close_time);    
+                    // val.h = val.day+": "+val.open_time+ " - " + val.close_time;
                     
                     val.open_time = moment(val.open_time).tz(getPropertyTimeZone()).format("h:mm A");
                     val.close_time = moment(val.close_time).tz(getPropertyTimeZone()).format("h:mm A");
