@@ -7,7 +7,7 @@
  * @return bool Returns true if the locale is ~ similar enough or false otherwise.
  */
 
-setEndPoint('https://twinpines.mallmaverickstaging.com/api/v3/twinpines/all.json');
+setEndPoint('//faubourgboisfranc.mallmaverick.com/api/v3/faubourg/all.json');
 sessionStorage.setItem('primary_locale', 'en-CA');
 sessionStorage.setItem('secondary_locale', 'fr-CA');
 
