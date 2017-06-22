@@ -18,8 +18,6 @@ $(document).ready(function() {
     function renderBanner(banner_template,home_banner,banners){
         var item_list = [];
         var item_secondary = [];
-        
-        console.log("rendering banners --", banners);
         var item_rendered = [];
         var banner_template_html = $(banner_template).html();
         Mustache.parse(banner_template_html);   // optional, speeds up future uses
