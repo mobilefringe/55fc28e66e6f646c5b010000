@@ -8,8 +8,15 @@
  */
 
 setEndPoint('//faubourgboisfranc.mallmaverick.com/api/v3/faubourg/all.json');
-sessionStorage.setItem('primary_locale', 'en-CA');
-sessionStorage.setItem('secondary_locale', 'fr-CA');
+
+Cookies.set('primary_locale', 'en-CA');
+Cookies.set('secondary_locale', 'fr-CA');
+
+if(getRequestParam('locale') == 'en'){
+    setCurrentLocale(Cookies.get('primary_locale'));
+} else if(getRequestParam('locale') == 'fr'){
+    setCurrentLocale(Cookies.get('secondary_locale'));
+}
 
 function isSameLocale(current_locale, locale_2) {
 	locale = null;
@@ -23,12 +30,10 @@ function isSameLocale(current_locale, locale_2) {
 			locale = 'en';
 			break;
 	}
-	
 	return locale == locale_2;
 }
 
 function show_results(id){
-	
 	if ( $("#"+id+"_results").is(":visible")){
 		$("#"+id+"_results").slideUp();
 		$("#"+id+"_arrow").removeClass("fa-chevron-down", 1000);
@@ -41,7 +46,6 @@ function show_results(id){
 		$("#"+id+"_arrow").removeClass("fa-chevron-right", 1000);
 		$("#"+id+"_arrow").addClass("fa-chevron-down", 1000);
 	}
-	
 }
 
 function toggle_menu (){
@@ -50,8 +54,8 @@ function toggle_menu (){
 	} else {
 		$(".mobile_menu").slideDown();    
 	}
-	
 }
+
 function toggle_submenu(id){
 	if ($("#"+id).is(":visible")){
 		$("#"+id).slideUp();
@@ -59,44 +63,36 @@ function toggle_submenu(id){
 		$(".submenu").slideUp();
 		$("#"+id).slideDown();
 	}
-	
 }
 
 function setPrimaryLanguage(){
-	sessionStorage.setItem('current_locale', sessionStorage.primary_locale);
-
-	i18n.setLng(sessionStorage.primary_locale, function(t) {
-		$(document).i18n();
-	});
-
-	$('.secondary-locale').hide(); // Shows
-	$('.primary-locale').show();
-	$("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
-	$("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
+    i18n.setLng(Cookies.get('primary_locale'), function(t) {
+        $(document).i18n();
+    });
+    Cookies.set('current_locale', Cookies.get('primary_locale'))
+    $('.primary-locale').show(); // Shows
+    $('.secondary-locale').hide();
+    $("#search_input").attr("placeholder", "Search");
+    $("#search_input_mobile").attr("placeholder", "Search");
 }
 
 function refreshCurrentLanguage() {
-	i18n.setLng(sessionStorage.current_locale, function(t) {
+	i18n.setLng(Cookies.get('current_locale'), function(t) {
 		$(document).i18n();
 	});
-	
-	$('.primary-locale').toggle(sessionStorage.primary_locale == sessionStorage.current_locale);
-	$('.secondary-locale').toggle(sessionStorage.secondary_locale == sessionStorage.current_locale);
+	$('.primary-locale').toggle(Cookies.get('primary_locale') == Cookies.get('current_locale'));
+	$('.secondary-locale').toggle(Cookies.get('secondary_locale') == Cookies.get('current_locale'));
 }
 
 function setSecondaryLanguage(){
-	sessionStorage.setItem('current_locale', sessionStorage.secondary_locale);
-
-	i18n.setLng(sessionStorage.secondary_locale, function(t) {
-		$(document).i18n();
-	});
-
-	$('.secondary-locale').show(); // Shows
-	$('.primary-locale').hide();
-
-	$("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
-	$("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
-	
+    i18n.setLng(Cookies.get('secondary_locale'), function(t) {
+        $(document).i18n();
+    });
+    Cookies.set('current_locale', Cookies.get('secondary_locale'))
+    $('.secondary-locale').show(); //Shows
+    $('.primary-locale').hide();
+    $("#search_input").attr("placeholder", "Chercher");
+    $("#search_input_mobile").attr("placeholder", "Chercher");
 }
 
 function showSearchResults(){
