@@ -99,7 +99,7 @@ $(document).ready(function() {
                 val.image_url_locale = val.image_url;
                 val.name_locale = val.name;
 
-                if (sessionStorage.current_locale == sessionStorage.secondary_locale) {
+                if (Cookies.get('current_locale') == Cookies.get('secondary_locale')) {
                     if (val.image_url_2) {
                         val.image_url_locale = val.image_url_2;
                     }
@@ -107,7 +107,7 @@ $(document).ready(function() {
                     if (val.name_2) {
                         val.name_locale = val.name_2;
                     }
-                }        
+                }       
                 
                 var featureitem_rendered = Mustache.render(feature_template_html,val);
                 item_rendered.push(featureitem_rendered);
