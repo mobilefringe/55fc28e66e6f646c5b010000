@@ -278,26 +278,29 @@ $(document).ready(function() {
 		showSearchResults();
 	});
     
-	//Using i18n for localization, for more info please visit //i18next.com/
-	i18n.init({preload: [sessionStorage.primary_locale,sessionStorage.secondary_locale],resGetPath: '../__lng__.json',fallbackLng: false }, 
-		function(t) {
-			var current_local = sessionStorage.primary_locale;
-			if(typeof(sessionStorage.current_locale) != 'undefined' ){
-				current_local = sessionStorage.current_locale;
-			}
-			// We're switching french to be the primary locale                
-			if(current_local == sessionStorage.primary_locale){
-				setPrimaryLanguage();
-				$('.en-CA').addClass('langSelect');
-				$('.fr-CA').removeClass('langSelect');
-			}else{
-				setSecondaryLanguage();
-				$('.fr-CA').addClass('langSelect');
-				$('.en-CA').removeClass('langSelect');
-				
-			}
-		}
-	);
+	//Using i18n for localization, for more info please visit http://i18next.com/
+    i18n.init({preload: [getStorage().primary_locale, getStorage().secondary_locale], resGetPath: '../__lng__.json', fallbackLng: false }, function(t) {
+        var current_locale = Cookies.get('primary_locale');
+        if(typeof(Cookies.get('current_locale')) != 'undefined' ){
+            current_locale = Cookies.get('current_locale')
+        }
+        // We're switching french to be the primary locale     
+        if(current_locale == Cookies.get('primary_locale')){
+            setPrimaryLanguage();
+            $('.en-CA').addClass('langSelect');
+			$('.fr-CA').removeClass('langSelect');
+        }else{
+            setSecondaryLanguage();
+            $('.fr-CA').addClass('langSelect');
+			$('.en-CA').removeClass('langSelect');
+        }
+    });
+    
+    // If there is no language set it to the primary locale.
+    // log(Cookies.get('current_locale'))
+    if (!Cookies.get('current_locale')) {
+        setPrimaryLanguage();
+    }
 					
 	$('.close-search').click(function(){
 		$('#search_results').hide();
