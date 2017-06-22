@@ -32,9 +32,6 @@ $(document).ready(function() {
         jobs = jobs.reverse();
         jobs_array = []
         $.each( jobs , function( key, val ){
-            // today = new Date();
-            // webDate = new Date(val.show_on_web_date);
-            
             today = moment();
             webDate = moment(val.show_on_web_date);
             if (today >= webDate) {
@@ -43,11 +40,12 @@ $(document).ready(function() {
         });
         jobs = jobs_array;
         store_details.name_locale = store_details.name
-        if (sessionStorage.secondary_locale == sessionStorage.current_locale) {
+        if (Cookies.get('secondary_locale') == Cookies.get('current_locale') ) {
             if (store_details.name_2) {
                 store_details.name_locale = store_details.name_2;
             }
         }
+        
         $('#loading_screen').hide();
         $('#main_content').fadeIn();
         // store_details.map_x_coordinate = store_details.x_coordinate - 19;
