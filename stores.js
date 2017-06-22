@@ -159,7 +159,6 @@ $(document).ready(function() {
                 }
             }
         }
-
         
         Mustache.parse(template_html);
         for (i = 0; i < all_categories.length; i++) {
@@ -206,8 +205,8 @@ $(document).ready(function() {
     
     function getSVGMapURL(){
         initData();
-        var mallDataJSON = JSON.parse(sessionStorage.mallData);
-        return '//mallmaverick.cdn.speedyrails.net' + mallDataJSON.property.svgmap_url;
+        var mallDataJSON = JSON.parse(getStorage().mallData);
+        return 'https://mallmaverick.cdn.speedyrails.net' + mallDataJSON.property.svgmap_url;
     }
     
     $('#view_all_link, #mobile_view_all_link').bind('click', function(e) {
