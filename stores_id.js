@@ -134,7 +134,7 @@ $(document).ready(function() {
                     val.alt_store_front_url = getImageURL(val.store_front_url); 
                 }
 
-                val.hours = getHoursForStoreSlug(val.slug).sortBy(function(o){ return o.day_of_week });
+                // val.hours = getHoursForStoreSlug(val.slug).sortBy(function(o){ return o.day_of_week });
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
