@@ -64,24 +64,18 @@ $(document).ready(function() {
                         val.store_name = store_details.name
                     }
                 }
-                if (val.description.length > 110) {
+                if (val.description != null && val.description.length > 110) {
                    val.description =  val.description.substring(0,100)+'...';
                 }
-                if (val.description_2.length > 110) {
+                if (val.description_2 != null && val.description_2.length > 110) {
                    val.description_2 =  val.description_2.substring(0,100)+'...';
                 }
-                // start = new Date (val.start_date);
-                // end = new Date (val.end_date);
-                // start.setDate(start.getDate()+1);
-                // end.setDate(end.getDate()+1);
-                // val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
-                
+
                 var start = moment(val.start_date).tz(getPropertyTimeZone());
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
                 if (start.format("DMY") == end.format("DMY")){
                 	val.dates = start.format("MMM D");
-                }
-                else{
+                } else {
                 	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
                 }
             }
@@ -92,50 +86,6 @@ $(document).ready(function() {
         $(container).html(item_rendered.join(''));
     };
     
-    
-    function get_month (id){
-        switch(id) {
-            case 0:
-                month = "Jan"
-                break;
-            case 1:
-                month = "Feb"
-                break;
-            case 2:
-                month = "Mar"
-                break;
-            case 3:
-                month = "Apr"
-                break;
-            case 4:
-                month = "May"
-                break;
-            case 5:
-                month = "June"
-                break;
-            case 6:
-                month = "July"
-                break;
-            case 7:
-                month = "Aug"
-                break;
-            case 8:
-                month = "Sep"
-                break;
-            case 9:
-                month = "Oct"
-                break;
-            case 10:
-                month = "Nov"
-                break;
-            case 11:
-                month = "Dec"
-                break;
-                
-        }
-        return month;
-    }
-
     rpd.add(renderAll); 
     $(document).trigger('render:ready');
 });
