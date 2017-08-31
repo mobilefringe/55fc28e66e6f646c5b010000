@@ -230,7 +230,6 @@ $(document).ready(function() {
     function renderSVGMap(store_details){
             if(navigator.appVersion.indexOf("MSIE 9.") == -1){
                 $('#map').bind('mousemove', function(e){
-                    //console.log(e.pageX+","+e.pageY);
                    $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
                 });
                 // var s = Snap("#map");
