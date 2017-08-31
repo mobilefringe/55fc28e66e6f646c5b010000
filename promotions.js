@@ -20,7 +20,6 @@ $(document).ready(function() {
         } else {
             $("#no_event_container").show();
         } 
-        console.log(all_promos)
         $("#loading_screen").hide();
         $("#main_content").show();
         $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
