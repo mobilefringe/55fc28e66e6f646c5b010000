@@ -43,7 +43,6 @@
     <script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
     <script src="/console.js"></script>
     
-    
     <!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
     <!--jReject is used to warn users certain browsers aren't compatible with this site-->
