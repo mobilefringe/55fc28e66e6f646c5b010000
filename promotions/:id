@@ -127,7 +127,7 @@
                     if((val.promo_image_url_abs).indexOf('missing.png') > -1){
                         var store_front_url = getImageURL(store_details.store_front_url);
                         val.alt_promo_image_url = store_front_url;
-                        if(store_front == null) {
+                        if(store_front_url == null) {
                             val.alt_promo_image_url = "//assets.kodekloud.io/sites/5633ae1a6e6f6469ef010000/5f309c3d7e0e61be0e6cd1ca513aa84d/default.jpg"
                         }
                     
