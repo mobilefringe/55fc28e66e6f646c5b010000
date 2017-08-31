@@ -95,13 +95,14 @@ $(document).ready(function() {
  
                 if (val.phone){
                     $("#phone_label").show();
-                }else {
+                } else {
                     $("#phone_label").hide();
                 }
+                
                 if (val.email){
                     $("#email_label").show();
                 } else {
-                     $("#email_label").hide();
+                    $("#email_label").hide();
                 }
                 
                 switch(val.z_coordinate) {
