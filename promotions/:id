@@ -155,7 +155,7 @@
                             val.alt_promo_image_url_2 = "//assets.kodekloud.io/sites/5633ae1a6e6f6469ef010000/5f309c3d7e0e61be0e6cd1ca513aa84d/default.jpg"
                         }
                     }
-                    val.alt_promo_image_url_2 = getCloudinaryImageUrl(val.promo_image2_url)
+                    // val.alt_promo_image_url_2 = getCloudinaryImageUrl(val.promo_image2_url)
                 }
                 
                 var start = moment(val.start_date).tz(getPropertyTimeZone());
