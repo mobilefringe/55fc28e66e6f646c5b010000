@@ -415,7 +415,12 @@
 
 <script id="todays_hours_search_template" type="x-tmpl-mustache/text">
     {% raw %}
-        <span>{{hours}}</span>
+        <span style="{{is_open_css}};">
+            {{open_time_localized}} - {{close_time_localized}}
+        </span>
+        <span style="{{is_closed_css}};">
+            Closed
+        </span>
     {% endraw %}
 </script>
 
