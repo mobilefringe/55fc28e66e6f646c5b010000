@@ -333,7 +333,7 @@
            <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-6 footer-text">
-                        <span data-i18n="app.copywrite"></span> <a href="/privacy_policy" data-i18n="app.privacy_policy"></a>
+                        <span id="current_year"></span> <span data-i18n="app.copywrite"></span> <a href="/privacy_policy" data-i18n="app.privacy_policy"></a>
                     </div>
                     <div class="text-right col-sm-6 col-md-6 footer-text"> <span data-i18n="app.powered_by"></span> <a href="//mallmaverick.com/" target="_blank">Mall Maverick</a> </div>
                 </div>
@@ -413,4 +413,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.min.js"></script>
 
 <script>
+    var current_year = moment().year();
+    $("#current_year").text(current_year);
 </script>
