@@ -75,7 +75,7 @@
             display: inline-block;
             width: 150px;
             height: 60px;
-            background-image: url(//codecloud.cdn.speedyrails.net/sites/59a85d4e6e6f6459e0680000/image/svg+xml/1517933026000/BK_Logo_ProudlyManagedBy_White_final_FR 2.svg);
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/595/original/BK_Logo_ProudlyManagedBy_White_final_FR_2.svg?1517945539);
             background-size: 100px 70px;
             background-repeat: no-repeat;
         }
@@ -191,6 +191,9 @@
                 border-top:none !important;
             } 
              .bk_logo_svg {
+                display: none;
+            }
+            .bk_logo_svg2 {
                 display: none;
             }
         }
