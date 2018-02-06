@@ -75,7 +75,7 @@
             display: inline-block;
             width: 150px;
             height: 60px;
-            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/595/original/BK_Logo_ProudlyManagedBy_White_final_FR_2.svg?1517945539);
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/597/original/BK_Logo_ProudlyManagedBy_White_final_FR_2.svg?1517945811);
             background-size: 100px 70px;
             background-repeat: no-repeat;
         }
