@@ -268,8 +268,8 @@
           <a href="//bentallkennedy.com/" target="_blank">
             <!--<img class="property_logo primary-locale" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/57f658736e6f64015e050000/image/png/undefined/bental-logo2.png"/>-->
             <div class="bk_logo_svg primary-locale"></div>
-            <img class="property_logo secondary-locale" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/57f658736e6f64015e050000/image/png/undefined/bental-logo2french.png" />
-            
+           
+            <div class="bk_logo_svg2 secondary-locale"></div>
         </a>
      </div>
 </header>
