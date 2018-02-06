@@ -193,6 +193,9 @@
              .bk_logo_svg {
                 display: none;
             }
+            .bk_logo_svg2 {
+                display: none;
+            }
         }
     </style>
 </head>
