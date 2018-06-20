@@ -300,7 +300,6 @@
           </div>
           <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
           <a href="//bentallkennedy.com/" target="_blank">
-            <!--<img class="property_logo primary-locale" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/57f658736e6f64015e050000/image/png/undefined/bental-logo2.png"/>-->
             <div class="bk_logo_svg primary-locale"></div>
            
             <div class="bk_logo_svg2 secondary-locale"></div>
