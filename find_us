@@ -2,13 +2,13 @@
     <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
 </div>
 <div  id="main_content" style="display:none">
-    <anv>
+    <nav>
         <ul class="breadcrumb">
-        <li><a href="/home" data-i18n="nav.home"></a> </li>
-        <li><a href="/home" data-i18n="nav.contact_us"></a> </li>
-        <li class="active" data-i18n="nav.find_us"></li>
-    </ul>
-    </anv>
+            <li><a href="/home" data-i18n="nav.home"></a> </li>
+            <li><a href="/home" data-i18n="nav.contact_us"></a> </li>
+            <li class="active" data-i18n="nav.find_us"></li>
+        </ul>
+    </nav>
     <div class="page_banner" data-i18n="nav.find_us">
     </div>
     <div class="inside_page_content">
