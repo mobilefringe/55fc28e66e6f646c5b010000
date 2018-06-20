@@ -30,9 +30,7 @@
             <div class="directory_div" id="store_category_list_container">
             </div>
         </div>
-        <div class="right_column">
-            <!--<a href="/map" id="map_link"><p class="right_column_header">centre map</p></a>-->
-            <br>
+        <div class="right_column"><br>
             <p class="right_column_header" data-i18n="stores.categories"></p>
             <div id="categories_container">
                 <a href="#categories_container" id="view_all_link" class="cat_links directory_content" style="font-weight:bold" data-i18n="general.view_all"></a>
