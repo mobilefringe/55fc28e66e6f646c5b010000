@@ -405,7 +405,7 @@
 
 <script id="logo_template" type="x-tmpl-mustache/text">
     <a class="navbar-brand" href="/home">
-        {% raw %}<img src="{{site_logo}}">{% endraw %}
+        {% raw %}<img src="{{site_logo}}" alt="Faubourg Bois-Franc">{% endraw %}
     </a>     
 </script>
 
