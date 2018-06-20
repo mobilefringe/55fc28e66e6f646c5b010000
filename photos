@@ -35,13 +35,7 @@
     <div class="inside_page_content">
         <div class="left_column">
             <section class="portfolio_strict" id="photo_container">
-                <div class="row isotope_portfolio_container">
-                    
-                
-                
-                
-                
-               </div>
+                <div class="row isotope_portfolio_container"></div>
           </section>
         </div>
         <div class="right_column">
