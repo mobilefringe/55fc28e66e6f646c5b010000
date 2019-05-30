@@ -386,6 +386,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:333px;
 }
 
+.flex-control-paging li a {
+    color: #fff;
+    background: #000;
+}
+
 .flex-control-paging li a.flex-active {
     background: #000;
     color: #fff;
