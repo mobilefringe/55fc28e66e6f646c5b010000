@@ -129,7 +129,7 @@
           font-size:13px !important;
         }
         .site-map-section a {
-            line-height:0 !important;
+            line-height:50px !important;
         }
         .site_welcome_msg{
             font-size:22px !important;
