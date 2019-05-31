@@ -11,7 +11,7 @@
         </ul>
     </nav>
     <div class="page_banner">
-        <h2 id="page_title">{{page_name}}</h2>
+        <h2 id="page_title"></h2>
     </div>
     <div class="inside_page_content" >
         <div class="left_column" id="mm_page_content">
