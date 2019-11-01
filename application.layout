@@ -185,9 +185,9 @@
         .right_column_header {
             color: #18498d ;
         }
-        .navbar .nav li a:hover {
-            color:#666 !important;
-        }
+        /*.navbar .nav li a:hover {*/
+        /*    color:#666 !important;*/
+        /*}*/
         .site-map-section a:hover {
         
         }
