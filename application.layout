@@ -126,6 +126,9 @@
         .navbar .nav li a:hover,.navbar .nav li a:active{
             text-decoration: underline;
         }
+        .dropdown-menu a:hover, .dropdown-menu:focus {
+            color: #18498d !important;
+        }
         .navbar .nav li a {
           font-size:13px !important;
         }
