@@ -36,7 +36,7 @@
                 <a href="#categories_container" id="view_all_link" class="cat_links directory_content" style="font-weight:bold" data-i18n="general.view_all"></a>
             </div>
             <br>
-            <p class="right_column_header" data-i18n="general.address_title"></p>
+            <h3 class="right_column_header" data-i18n="general.address_title"></h3>
             <div id="centre_info_container">
             </div>
             
