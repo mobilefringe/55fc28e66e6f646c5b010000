@@ -3748,10 +3748,7 @@ input[type="button"].btn-block {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  /*color: #ffffff;*/
-  .dropdown-menu a:hover, .dropdown-menu:focus {
-    color: #18498d !important;
-}
+  color: #ffffff;
   text-decoration: inherit;
   outline: 0;
   background-color: #428bca;
