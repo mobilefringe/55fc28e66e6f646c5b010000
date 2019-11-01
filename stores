@@ -51,7 +51,7 @@
             <h2 class="primary-locale">{{name}}</h2>
             <h2 class="secondary-locale">{{name_2}}</h2>
         </div>
-        <p class="directory_header_phone directory_phone_col" data-i18n="stores.phone"></p>
+        <h2 class="directory_header_phone directory_phone_col" data-i18n="stores.phone"></h2>
         
         <div class="store_list" id="cat{{id}}_list"></div>
     </div>
