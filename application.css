@@ -952,6 +952,9 @@ p {
   font-weight: 200;
   line-height: 1.4;
 }
+.lbCloseLink {
+    font-size: 20px;
+}
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
