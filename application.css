@@ -336,9 +336,7 @@ th {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
-.dropdown-menu a:hover, .dropdown-menu:focus {
-    color: #18498d !important;
-}
+
 
 .gmap{
     width:100%;
@@ -3745,6 +3743,7 @@ input[type="button"].btn-block {
 .dropdown-menu > li > a:focus {
   text-decoration: underline;
   color: #262626;
+  color: #18498d;
   background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
