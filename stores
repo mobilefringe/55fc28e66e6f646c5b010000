@@ -22,8 +22,8 @@
             </div>
             
             <div class="directory_div" id="no_cat_list">
-                <p class="directory_header_name directory_name_col" data-i18n="stores.merchant_name"></p>
-                <p class="directory_header_phone directory_phone_col" data-i18n="stores.phone"></p>
+                <h2 class="directory_header_name directory_name_col" data-i18n="stores.merchant_name"></h2>
+                <h2 class="directory_header_phone directory_phone_col" data-i18n="stores.phone"></h2>
                 <div class="store_list" id="store_list_container">
                 </div>
             </div>
