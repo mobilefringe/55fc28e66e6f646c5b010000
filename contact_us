@@ -15,7 +15,7 @@
         <div class="left_column">
             <img class="inside_banner_image" alt="" src="//codecloud.cdn.speedyrails.net/sites/55fc28e66e6f646c5b010000/5f309c3d7e0e61be0e6cd1ca513aa84d/Untitled-4.png"/>
             <div class="show_mobile">
-                <p class="right_column_header" data-i18n="general.address_title">centre information</p>
+                <h3 class="right_column_header" data-i18n="general.address_title">centre information</h3>
                 <div id="centre_info_container_mobile">
                    
                 </div>
