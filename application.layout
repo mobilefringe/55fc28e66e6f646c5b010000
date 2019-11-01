@@ -188,7 +188,7 @@
             color: #18498d ;
         }
         .navbar .nav li a:hover {
-            color:white !important;
+            color:white;
         }
         .site-map-section a:hover {
         
