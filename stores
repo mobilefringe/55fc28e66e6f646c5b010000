@@ -47,10 +47,10 @@
 
 <script id="category_store_list_template" type="x-tmpl-mustache/text">
     <div id="cat{{id}}" class="cat_list_div" style="display:none">
-        <p class="directory_header_name directory_name_col">
-            <span class="primary-locale">{{name}}</span>
-            <span class="secondary-locale">{{name_2}}</span>
-        </p>
+        <div class="directory_header_name directory_name_col">
+            <h2 class="primary-locale">{{name}}</h2>
+            <h2 class="secondary-locale">{{name_2}}</h2>
+        </div>
         <p class="directory_header_phone directory_phone_col" data-i18n="stores.phone"></p>
         
         <div class="store_list" id="cat{{id}}_list"></div>
