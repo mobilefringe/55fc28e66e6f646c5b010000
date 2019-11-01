@@ -337,7 +337,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
 .dropdown-menu a:hover, .dropdown-menu:focus {
-    color: #18498d;
+    color: #18498d !important;
 }
 
 .gmap{
