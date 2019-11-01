@@ -3743,7 +3743,6 @@ input[type="button"].btn-block {
 .dropdown-menu > li > a:focus {
   text-decoration: underline;
   color: #262626;
-  color: #18498d;
   background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
