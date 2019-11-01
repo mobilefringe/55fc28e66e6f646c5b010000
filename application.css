@@ -336,6 +336,10 @@ th {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
+.dropdown-menu a:hover, .dropdown-menu:focus {
+    color: #18498d;
+}
+
 .gmap{
     width:100%;
     border:none;
