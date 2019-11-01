@@ -127,7 +127,7 @@
             text-decoration: underline;
         }
         .dropdown-menu a:hover, .dropdown-menu:focus {
-            color: #18498d !important;
+            color: #333;
         }
         .navbar .nav li a {
           font-size:13px !important;
