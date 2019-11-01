@@ -15,7 +15,7 @@
         <div class="left_column">
             <img class="inside_banner_image" alt="" src="//codecloud.cdn.speedyrails.net/sites/55fc28e66e6f646c5b010000/5f309c3d7e0e61be0e6cd1ca513aa84d/stores.png"/>
             <div class="mobile_cat_list" style="display:none">
-                <p class="right_column_header"  data-i18n="stores.categories"></p>
+                <h3 class="right_column_header"  data-i18n="stores.categories"></h3>
                 <div id="mobile_categories_container">
                     <a href="#categories_container" id="mobile_view_all_link" class="cat_links directory_content" style="font-weight:bold" data-i18n="general.view_all"></a><br>
                 </div>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="right_column"><br>
-            <p class="right_column_header" data-i18n="stores.categories"></p>
+            <h3 class="right_column_header" data-i18n="stores.categories"></h3>
             <div id="categories_container">
                 <a href="#categories_container" id="view_all_link" class="cat_links directory_content" style="font-weight:bold" data-i18n="general.view_all"></a>
             </div>
