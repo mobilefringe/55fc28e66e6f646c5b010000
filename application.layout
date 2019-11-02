@@ -105,7 +105,7 @@
             border:40px solid #eaf1fb;
         }
         .btn-primary {
-            background: #18498d !important;
+            background: #18498d !impo_tanm;
             border-color:#18498d !important;
             text-align:center;
             color:white !important;
@@ -117,7 +117,10 @@
             color:white !important;
         }
         /*menu colors*/
-        .navbar .nav li a{
+        .navbar .nav li {
+            color:white;
+        }
+        .navbar .nav li .menu_item {
             color:white;
         }
         .view_button {
