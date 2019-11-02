@@ -54,11 +54,7 @@ template {
 a {
   background: transparent;
 }
-a:active,
-a:hover {
-  /*outline: 0;*/
-  /*color:#e2222f;*/
-}
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -768,7 +764,6 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #e2222f;
   text-decoration: none;
 }
 a:hover,
