@@ -120,7 +120,7 @@
         .navbar .nav li {
             color:white;
         }
-        .navbar .nav li .menu_item {
+        .navbar .nav li .menu_item:hover {
             color:white;
         }
         .view_button {
