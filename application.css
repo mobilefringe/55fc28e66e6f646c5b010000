@@ -6677,14 +6677,7 @@ header .container {
 .navbar .nav {
   margin: 27px 0 0 0;
 }
-.navbar .nav li a {
-  font-size:13px !important;
-  margin: 0 3px;
-  text-transform: uppercase;
-  background-color: transparent !important;
-  border-bottom: solid 1px transparent;
-  color:white;
-}
+
 .navbar .nav li a:hover,
 .navbar .nav li a:active {
   background-color: transparent;
