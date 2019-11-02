@@ -121,7 +121,7 @@
             color:white;
         }
         .navbar .nav li .menu_item:hover {
-            color:white;
+            color:white !important;
         }
         .view_button {
             background:#18498d !important;
