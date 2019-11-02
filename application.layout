@@ -117,7 +117,7 @@
             color:white !important;
         }
         /*menu colors*/
-        .navbar .nav li {
+        .navbar .nav .menu_item {
             color:white;
         }
         .navbar .nav .menu_item:hover {
