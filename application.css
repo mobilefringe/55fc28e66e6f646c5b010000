@@ -287,10 +287,9 @@ th {
     font-size: 11.5px;
 }
 
-.language a {
-    color:white;
+.language a, .language a:hover, .language a:focus {
+    color: white;   
 }
-
 
 .langSelect {
     font-weight:bolder;
