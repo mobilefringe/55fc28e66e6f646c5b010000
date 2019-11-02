@@ -57,7 +57,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
-  color:#e2222f;
+  /*color:#e2222f;*/
 }
 abbr[title] {
   border-bottom: 1px dotted;
